@@ -1,0 +1,29 @@
+
+server:
+  port: 9119
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: false
+      logging:
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        #show-sql: true
+        highlight_sql: true
+        format_sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password:
+
+
+#logging:
+#  level:
+#    org.hibernate.SQL: debug
